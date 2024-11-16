@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #ae4141;
+    background-color: #14a04a; /* Light gray background color for the entire page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(bk1.jpg);
+}
+
+#chat-window {
+    max-width: 600px;
+    margin: 0 auto;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 15px rgba(212, 38, 38, 0.1);
+    border-radius: 8px;
+    background-image: linear-gradient(rgba(237, 234, 234, 0.7), rgba(255, 255, 255, 0.7));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.message {
+    margin: 10px 0;
+}
+
+.user-message {
+    text-align: right;
+    color: blue;
+}
+
+.bot-message {
+    text-align: left;
+    color: green;
+}
+
+.input-group {
+    padding: 10px;
+}
+
+/* Adjustments for mobile */
+@media (max-width: 768px) {
+    #chat-window {
+        height: 80vh;
+        width: 100%;
+        margin: 0;
+    }
+}
